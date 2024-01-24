@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
         <div class="header-container">
           <nav class="header-nav">
@@ -17,16 +17,16 @@
             </a>
             <ul class="header-menu">
               <li>
-                <a class="link" href="#aboutus-section">Про нас</a>
+                <a class="link" href="#perevtilennia-section">Про нас</a>
               </li>
               <li>
-                <a class="link" href="#whywe-section">Чому ми</a>
+                <a class="link" href="#choice-section">Чому ми</a>
               </li>
               <li>
-                <a class="link" href="#ourprocedures-section">Наші процедури</a>
+                <a class="link" href="#procedures-section">Наші процедури</a>
               </li>
               <li>
-                <a class="link" href="#contacts-section">Контакти</a>
+                <a class="link" href="#find-section">Контакти</a>
               </li>
             </ul>
             <ul class="header-icons">
@@ -70,7 +70,7 @@
           </div>
         </div>
       </section>
-      <section class="perevtilennia-section">
+      <section class="section" id="perevtilennia-section">
         <div class="container">
           <div class="perevtilennia-content">
             <div class="perevtilennia-text">
@@ -94,31 +94,59 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="section" id="choice-section">
         <div class="container">
-          <h2 class="choice-section">Чому люди <span class="accent">обирають нас</span></h2>
-          <p>Всі наші косметологи мають вищу медичну освіту та стаж роботи від 5 років</p>
-          <p>Використовуємо тільки професійне обладнання та косметику, перевірену часом</p>
-          <p>Наша мета - підкреслити переваги та приховати недоліки, а не переробити</p>
+          <h2 class="choice-title">Чому люди <span class="accent">обирають нас</span></h2>
+          <ul class="choice-list">
+            <!-- <svg class="choice-icon" width="48" height="48">
+              <use href="./images/icons.svg#icon-crown_icon"></use>
+            </svg> -->
+          <li class="choice-item">
+            Всі наші косметологи мають вищу медичну освіту та стаж роботи від 5 років</li>
+          <li class="choice-item">Використовуємо тільки професійне обладнання та косметику, перевірену часом</li>
+          <li class="choice-item">Наша мета - підкреслити переваги та приховати недоліки, а не переробити</li>
+         </ul>  
         </div>
       </section>
-      <section>
+      <section class="section" id="procedures-section">
         <div class="container">
-          <h2 class="procedures-section">Наші <span class="accent">процедури</span></h2>
-          <ul>
-            <li>Маски для обличчя</li>
-            <li>Інʼєкції для обличчя</li>
-            <li>Очищення обличчя</li>
-          </ul>
+          <h2 class="procedures-title">Наші <span class="accent">процедури</span></h2>
+          <div class="procedures-container">
+            <button class="carousel-button" type="button">
+              <svg class="carousel-arrow" width="44" height="44">
+                <use href="./images/icons.svg#icon-Arrow"></use>
+              </svg>
+            </button>
+            <ul class="procedures-list">
+              <li class="procedures-item">
+                <article class="procedures-card">
+                  <h3 class="procedure-title" lang="uk">Маски для обличчя</h3>
+                </article>
+              </li>
+              <li class="procedures-item">
+                <article class="procedures-card">
+                  <h3 class="procedure-title" lang="uk">Інʼєкції для обличчя</h3>
+                </article>
+              </li>
+              <li class="procedures-item">
+                <article class="procedures-card">
+                  <h3 class="procedure-title" lang="uk">Очищення обличчя</h3>
+                </article>
+              </li>
+            </ul>
+            <button class="carousel-button" type="button">
+              <svg class="carousel-arrow" width="44" height="44">
+                <use href="./images/icons.svg#icon-Arrow"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
-      <section>
+      <section class="section" id="find-section">
         <div class="container">
-          <h2 class="find-section">Як нас <span class="accent">знайти</span></h2>
-          <p class="form-text">
-            Запишіться <span class="accent">безкоштовно</span> та отримайте подарунок
-          </p>
-          <iframe
+          <h2 class="find-title">Як нас <span class="accent">знайти</span></h2>
+          <div class="find-container">
+            <iframe class="find-map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325734713457!2d30.515600376887765!3d50.442356571590715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C70YzQstCw0YAg0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60LAsIDUsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1699190786051!5m2!1suk!2sua"
             width="600"
             height="450"
@@ -127,62 +155,83 @@
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
+          <p class="form-text">
+            Запишіться <span class="accent">безкоштовно</span> та отримайте подарунок
+          </p>
+          </div>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <nav>
-          <a href="./index.html">
-            <img src="./images/logo.svg" alt="Логотип" />
-          </a>
-          <ul>
-            <li>
-              <a class="link" href="#aboutus-section">Про нас</a>
-            </li>
-            <li>
-              <a class="link" href="#whywe-section">Чому ми</a>
-            </li>
-            <li>
-              <a class="link" href="#ourprocedures-section">Наші процедури</a>
-            </li>
-            <li>
-              <a class="link" href="#contacts-section">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        <address>
-          <ul>
-            <li>
-              <a class="address-link" href="tel:+380930000000">+38 (093) 000 00 00</a>
-            </li>
-            <li>
-              <a class="address-link" href="mailto:example@gmail.com">beautyzone@gmail.com</a>
-            </li>
-            <li>
-              <a
-                class="address-link"
-                href="https://maps.app.goo.gl/8k8LiRJa2Az8qU1z7"
-                target="_blank"
-                >Україна, м. Київ, бульвар Тараса Шевченка 5</a
-              >
-            </li>
-            <li>
-              <a href="#">
-                <!-- facebook icon -->
+        <div class="footer-container">
+          <nav class="footer-nav">
+            <div class="footer-logo">
+              <a href="./index.html">
+                <img src="./images/logo.svg" alt="Логотип" />
               </a>
-            </li>
-            <li>
-              <a href="#">
-                <!-- instagram icon -->
-              </a>
-            </li>
-            <li>
-              <a class="address-link" href="#" target="_blank">Політика конфіденційності</a>
-            </li>
-          </ul>
-          <p class="address-copyright">&copy; 2023 Дані захищені</p>
-        </address>
+            </div>
+            <ul class="footer-menu">
+              <li>
+                <a class="address-link link" href="#perevtilennia-section">Про нас</a>
+              </li>
+              <li>
+                <a class="address-link link" href="#choice-section">Чому ми</a>
+              </li>
+              <li>
+                <a class="address-link link" href="#procedures-section">Наші процедури</a>
+              </li>
+              <li>
+                <a class="address-link link" href="#find-section">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="footer-address">
+            <ul class="address-list">
+              <li>
+                <a class="address-link" href="tel:+380930000000">+38 (093) 000 00 00</a>
+              </li>
+              <li>
+                <a class="address-link" href="mailto:example@gmail.com">beautyzone@gmail.com</a>
+              </li>
+              <li>
+                <a
+                  class="address-link"
+                  href="https://maps.app.goo.gl/8k8LiRJa2Az8qU1z7"
+                  target="_blank"
+                  >Україна, м. Київ, бульвар Тараса Шевченка 5</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="address-icon" width="42" height="42">
+                    <use href="./images/icons.svg#icon-telepone_icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="address-icon" width="42" height="42">
+                    <use href="./images/icons.svg#icon-facebook_icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="address-icon" width="42" height="42">
+                    <use href="./images/icons.svg#icon-instagram_icon"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <ul class="address-info">
+              <li>
+                <a class="address-link" href="#" target="_blank">Політика конфіденційності</a>
+                <p class="address-copyright">&copy; 2023 Дані захищені</p>
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </footer>
   </body>

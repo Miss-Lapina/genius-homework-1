@@ -64,7 +64,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 22px;
   font-weight: 400;
-  line-height: 1.17;
+  line-height: 1.7;
   margin: 0;
 }
 
@@ -87,7 +87,9 @@ h2 {
   font-weight: 700;
   font-size: 64px;
   line-height: 1.15;
+  text-align: center;
 }
+/* 
 h2.choice-section {
   text-align: center;
 }
@@ -96,7 +98,7 @@ h2.procedures-section {
 }
 h2.find-section {
   text-align: center;
-}
+} */
 
 a {
   display: inline-block;
@@ -226,6 +228,7 @@ ul {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
+  line-height: 38px; 
   gap: 40px;
 }
 
@@ -239,6 +242,163 @@ ul {
 
 .perevtilennia-text,
 .perevtilennia-image {
+  flex-basis: 50%;
+}
+
+
+.perevtilennia-section .accentblack {
+  font-weight: 600;
+}
+
+/* Choice Section */
+
+.choice-title {
+  max-width: 432px;
+  margin: 0 auto 48px;
+}
+
+.choice-list {
+  display: flex;
+  flex-basis: calc((100% - 56px) / 3);
+  gap: 56px;
+}
+
+.choice-item {
+  display: flex;
+  height: 181px;
+  width: 252px;
+  padding: 24px 32px;
+  flex-basis: 50%;
+  align-items: flex-end;
+  text-align: center;
+  line-height: 24px; 
+  font-size: 18px;
+  border: 32px solid var(--color-primery-white);
+  border-radius: 32px;
+  box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
+  background: #FFF;
+}
+
+/* Procedures Section */
+
+.procedures-card {
+  height: 456px;
+  padding: 24px;
+  border-radius: 4px 120px;
+  background-image: linear-gradient(180deg, rgba(1, 28, 68, 0.00) 48.53%, rgba(1, 28, 68, 0.73) 84.61%, #011C44 101.39%);
+}
+
+.procedures-container {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 32px;
+}
+
+.procedures-list {
+  display: flex;
+  gap: 16px;
+}
+
+.procedure-title {
+/* color: #FFF; */
+text-align: center;
+font-family: Roboto;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; 
+}
+
+/* Carousel */
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--color-primery-blue);
+  cursor: pointer;
+}
+
+.carousel-button:hover {
+  background-color: var(--color-primery-lightblue);
+  border: 1px solid var(--color-primery-white);
+  fill: var(--color-primery-white);
+}
+/* 
+.carousel-button:hover {
+  background-color: var(--color-primery-blue);
+}
+
+.carousel-arrow {
+  fill: var(--color-primery-blue);
+}
+
+.carousel-button:hover .carousel-arrow {
+  fill: var(--color-primery-white);
+} */
+
+
+/* Find Section */
+
+.find-container {
+  display: flex;
+  gap: 32px;
+  padding-bottom: 94px;
+}
+
+.find-title {
+  margin: 0;
+  padding-bottom: 48px;
+}
+
+.find-map {
+  border-radius: 32px;
+  border: none;
+  flex-shrink: 0;
+}
+
+/* Footer */
+
+.footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+}
+
+.footer-logo {
+  flex-basis: 50%;
+  gap: 20px;
+}
+
+.footer-menu {
+  flex-basis: 50%;
+  gap: 20px;
+}
+
+.footer-address {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+}
+
+.address-list,
+.address-info {
   flex-basis: 50%;
 }
 
@@ -259,6 +419,34 @@ ul {
   color: var(--color-secondary-darkgrey);
   font-size: 13px;
 }
+
+.address-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  fill: var(--color-primery-white);
+}
+/* .address-icon:hover {
+  background-color: var(--color-primery-white);
+  border: 1px solid var(--color-primery-white);
+  fill: var(--color-primery-blue);
+} */
+
+.footer {
+  background-image: url('../images/background_bottom.svg');
+  background-color: var(--color-primery-blue);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .accent {
   color: var(--color-primery-lightblue);
 }
@@ -272,6 +460,3 @@ ul {
   line-height: 114px;
 }
 
-.perevtilennia-section .accentblack {
-  font-weight: 600;
-}
